@@ -92,6 +92,17 @@ export interface SiteConfig {
 
 export type View = 'cards' | 'table'
 
+export type Sort =
+  | 'default'
+  | 'name'
+  | 'region'
+  | 'cpu'
+  | 'mem'
+  | 'disk'
+  | 'netIn'
+  | 'netOut'
+  | 'uptime'
+
 export interface Usage {
   cpu?: number
   mem?: number
